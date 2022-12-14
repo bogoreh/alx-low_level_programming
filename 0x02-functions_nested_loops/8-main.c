@@ -1,25 +1,12 @@
-nclude "main.h"
-
-
+#include "main.h"
 
 /**
+ * main - check the code
  *
- *  * main - check the code
- *
- *   *
- *
- *    * Return: Always 0.
- *
- *     */
-
+ * Return: Always 0.
+ */
 int main(void)
-
 {
-
-	    jack_bauer();
-
-	        return (0);
-
+    jack_bauer();
+    return (0);
 }
-
-
