@@ -1,27 +1,33 @@
-#ifndef main_h
+#ifndef _main_h_
+#define _main_h_
 
-	#define main_h
+int _putchar(char c);
 
+void print_alphabet(void);
 
+void print_alphabet_x10(void);
 
+int _islower(int c);
 
+int _isalpha(int c);
 
-	int _putchar(char);
+int print_sign(int n);
 
-		void print_alphabet(void);
+int _abs(int);
 
-			void print_alphabet_x10(void);
+int print_last_digit(int);
 
-				int _islower(int c);
+void jack_bauer(void);
 
-					int _isalpha(int c);
+void times_table(void);
 
-						int print_sign(int n);
+int add(int, int);
 
-							int _abs(int);
+void print_to_98(int n);
 
-								int print_last_digit(int);
+void print_times_table(int n);
 
+<<<<<<< HEAD
 									void jack_bauer(void);
 
 										void times_table(void);
@@ -31,4 +37,6 @@
 												void print_to_98(int n);
 
 void print_times_table(int n);
+=======
+>>>>>>> af260dcc2f1088c4fb66e3c96409fbaa603dae28
 #endif

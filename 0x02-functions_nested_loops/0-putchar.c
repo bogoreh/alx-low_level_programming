@@ -1,48 +1,3 @@
-<<<<<<< HEAD
-nclude "main.h"
-
-	/**
-	 *
-	 * 	 * main - print _putchar
-	 *
-	 * 	 	 * is written by mbah
-	 *
-	 * 	 	 	 * Return: 0
-	 *
-	 * 	 	 	 	 */
-
-
-
-
-
-	int main(void)
-
-		{
-
-				_putchar('_');
-
-					_putchar('p');
-
-						_putchar('u');
-
-							_putchar('t');
-
-								_putchar('c');
-
-									_putchar('h');
-
-										_putchar('a');
-
-											_putchar('r');
-
-												_putchar('\n');
-
-													return (0);
-
-														}
-
-
-=======
 #include "main.h"
 #include <stdio.h>
 /**
@@ -66,4 +21,3 @@ int main(void)
 	putchar('\n');
 return (0);
 }
->>>>>>> fe8ede9df37484639b93c772b860b3e702f3f8e1
