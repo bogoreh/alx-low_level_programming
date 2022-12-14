@@ -1,55 +1,28 @@
-nclude <stdio.h>
-
+#include <stdio.h>
 /**
- *
- *  * main - program prints first number and adds it to previous and print again
- *
- *   * Return: always 0
- *
- *    */
-
-
+ * main - program prints first number and adds it to previous and print again
+ * Return: always 0
+ */
 
 int main(void)
-
 {
+	long int new;
+	long int f1 = 1;
+	long int f2 = 2;
+	int i;
 
-		long int new;
+	printf("%li", f1);
 
-			long int f1 = 1;
+		for (i = 0; i < 49; i++)
+	{
+		printf(", %li", f2);
 
-				long int f2 = 2;
+new = f1 + f2;
+f1 = f2;
+f2 = new;
 
-					int i;
+	}
 
-
-
-						printf("%li", f1);
-
-
-
-								for (i = 0; i < 49; i++)
-
-										{
-
-													printf(", %li", f2);
-
-
-
-													new = f1 + f2;
-
-													f1 = f2;
-
-													f2 = new;
-
-
-
-														}
-
-
-
-									printf("\n");
-
-										return (0);
-
+	printf("\n");
+	return (0);
 }
