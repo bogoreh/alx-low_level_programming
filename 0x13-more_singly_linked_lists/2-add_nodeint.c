@@ -1,21 +1,14 @@
-/*
- * File: 2-add_nodeint.c
- * Auth: Brennan D Baraban
- */
-
 #include "lists.h"
+#include <stdlib.h>
 
 /**
- * add_nodeint - Adds a new node at the beginning
- *               of a listint_t list.
- * @head: A pointer to the address of the
- *        head of the listint_t list.
- * @n: The integer for the new node to contain.
+ * createNode - create a new node
  *
- * Return: If the function fails - NULL.
- *         Otherwise - the address of the new element.
+ * @prmNbr: number
+ *
+ * Return: new element
  */
-listint_t *add_nodeint(listint_t **head, const int n)
+listint_t *createNode(const int prmNbr)
 {
 	listint_t *new;
 
@@ -23,10 +16,37 @@ listint_t *add_nodeint(listint_t **head, const int n)
 	if (new == NULL)
 		return (NULL);
 
-	new->n = n;
-	new->next = *head;
+	new->n = prmNbr;
 
-	*head = new;
+	return (new);
+}
+
+/**
+ * add_nodeint - adds a new node at the beginning of a list_t list
+ *
+ * @head: pointer to last element
+ * @n: number
+ *
+ * Return: new last element
+ */
+listint_t *add_nodeint(listint_t **head, const int n)
+{
+	listint_t *new;
+
+	if (head == NULL)
+		return (NULL);
+
+	new = createNode(n);
+	if (new == NULL)
+		return (NULL);
+
+	if (*head == NULL)
+		*head = new;
+	else
+	{
+		new->next = *head;
+		*head = new;
+	}
 
 	return (new);
 }
